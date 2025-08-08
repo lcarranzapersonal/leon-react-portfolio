@@ -29,9 +29,7 @@ function App() {
                 <Link
                   className="transition delay-50 duration-250 ease-in-out text-black rounded-3xl hover:bg-gray-50/50 bg-blend-multiply px-4 py-2"
                   to="/"
-                >
-                  Home
-                </Link>
+                ></Link>
               </li>
               <li>
                 <Link
