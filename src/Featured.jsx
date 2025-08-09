@@ -33,14 +33,7 @@ export function Featured() {
     >
       <div className="flex flex-col max-w-xs items-center">
         <div className="flex flex-col">
-          <ul
-            ref={ref}
-            className={`${
-              isVisible
-                ? "flex flex-row opacity-100"
-                : "flex flew-row opacity-50"
-            } transition-all duration-1000 ease-in-out mx-auto`}
-          >
+          <ul>
             <li>
               <Link
                 className="transition delay-50 duration-250 ease-in-out text-black rounded-3xl hover:bg-gray-50/50 bg-blend-multiply px-4 py-2"
