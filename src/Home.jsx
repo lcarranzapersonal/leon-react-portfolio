@@ -38,8 +38,11 @@ export function Home() {
       animate={{ opacity: 100 }}
       exit={{ opacity: 0 }}
     >
+      <div className="h-100 z-10 w-100 items-center">
+          <Scene1 className=""></Scene1>
+        </div>
       <div className="flex flex-col items-center sm:scale-100 md:scale-85 lg:scale-60 scale-100">
-        <div className="flex flex-col">
+        <div className="flex flex-col items-center">
           <ul className="">
             <li>
               <ul className="flex flex-col lg:flex-row">

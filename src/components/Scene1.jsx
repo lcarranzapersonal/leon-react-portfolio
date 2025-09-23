@@ -17,7 +17,7 @@ export default function Scene1() {
           {/* <Model4 pos={[0, 0, 0]} /> */}
           <Model3 pos={[0, 0, 0]} />
           {/* <Model5 /> */}
-          <OrbitControls makeDefault />
+          <OrbitControls enableZoom={false} />
         </Canvas>
       </Suspense>
     </div>
