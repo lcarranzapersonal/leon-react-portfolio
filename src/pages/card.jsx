@@ -32,10 +32,10 @@ export const Card = ({
             : "w-screen sm:max-w-md md:max-w-2xl px-8"
         } transition-all duration-1000 ease-in-out mx-auto`}
       >
-        <div className="transition delay-50 duration-300 m-2 ease-in-out flex flex-col items-center bg-gray-50 p-5 rounded-2xl drop-shadow-xl hover:drop-shadow-2xl">
-          <div className="relative">
-            <img src={cardImg} className="max-w-full h-auto z-0 "></img>
-            <div className="sm:hidden md:flex absolute border-2 border-red-500  flex-col bottom-1/3 left-1/2 -translate-x-1/2 items-center z-500">
+        <div className="">
+          <div className="">
+            <img src={cardImg} className="w-full z-0 "></img>
+            <div className="flex flex-col items-center">
               <h2 className="py-1 text-2xl font-medium">{title}</h2>
               <h3 className="">{date}</h3>
               <div className="flex flex-row p-2 text-xs">
