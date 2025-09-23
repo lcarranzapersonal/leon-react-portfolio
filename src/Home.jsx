@@ -38,7 +38,7 @@ export function Home() {
       animate={{ opacity: 100 }}
       exit={{ opacity: 0 }}
     >
-      <div className="sticky h-30 w-100 items-center">
+      <div className="sticky h-75 w-100 items-center">
           <Scene1 className=""></Scene1>
         </div>
       <div className="flex flex-col items-center sm:scale-100 md:scale-85 lg:scale-60 scale-100">
