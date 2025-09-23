@@ -10,7 +10,7 @@ import { Hello } from "../Hello";
 
 export default function Scene1() {
   return (
-    <div className="max-w-lvw h-lvh">
+    <div className="max-w-100 h-100">
       <Suspense fallback={<Hello />}>
         <Canvas>
           {/* <Model1 pos={[0, 0, 0]} /> */}

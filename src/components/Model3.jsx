@@ -25,7 +25,7 @@ export default function Model1({ pos = [0, 0, 0] }) {
 
   return (
     <mesh position={pos}>
-      <icosahedronGeometry args={[1, 120]} />
+      <icosahedronGeometry args={[2, 120]} />
       <shaderMaterial
         args={[
           {

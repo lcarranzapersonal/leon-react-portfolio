@@ -25,7 +25,7 @@ function App() {
         <div className="w-full flex justify-center sticky top-2 z-20">
           <nav className="">
             
-            <ul className="hidden md:flex flex-row [&>*]:mx-5 px-2 z-20">
+            <ul className="md:flex flex-row [&>*]:mx-5 px-2 z-20">
               <li>
                 <Link
                   className="transition delay-50 duration-250 ease-in-out text-black rounded-3xl hover:bg-gray-50/50 bg-blend-multiply px-4 py-2"

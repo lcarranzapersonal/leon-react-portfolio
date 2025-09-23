@@ -37,9 +37,9 @@ Offsets which follow the outline of a spiral were critical gestures to adhere to
       <div className="flex flex-col items-center sm:w-3xl md:w-vw lg:w-7xl py-10">
         <img src={spiral1} className="py-5"></img>
         <img src={spiral2} className="py-5"></img>
-        <p className="px-25">An ideal offset distance between walls was identified in the Musashino Library. Since the Seneca Falls site is considerably smaller, a new distance must be established for the branch library. This was determined to be 10 feet, with a 5 foot deviation based on public and private programming.</p>
+        <p className="px-15">An ideal offset distance between walls was identified in the Musashino Library. Since the Seneca Falls site is considerably smaller, a new distance must be established for the branch library. This was determined to be 10 feet, with a 5 foot deviation based on public and private programming.</p>
         <br></br>
-        <p className="px-25">A gabled roof, based on the
+        <p className="px-15">A gabled roof, based on the
 one found in Haus Gables, is implemented into the design of the building. It cuts into the otherwise rectangular wall geometry in elevation. The material capabilities of CLT allows for both a specific geometry that can cover and span across the walls, as well as cuts within the roof itself that index areas of public programs.</p>
         
         <img src={spiral3} className="py-20"></img>
