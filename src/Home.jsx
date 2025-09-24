@@ -30,6 +30,12 @@ export function Home() {
     once: true,
   });
 
+  const transition = {
+    duration: 1.5,
+    delay: 0.5,
+    ease: [0, 0.71, 0.2, 1.01],
+  };
+
   return (
     <motion.div
       className="flex flex-col items-center justify-items-center min-h-screen px-4"
@@ -37,9 +43,15 @@ export function Home() {
       animate={{ opacity: 100 }}
       exit={{ opacity: 0 }}
     >
-      <div className="xs:h-100 sm:h-25 w-100 items-center">
+      <motion.div
+        className="xs:h-100 sm:h-25 w-100 items-center"
+        initial={{ y: -1000 }}
+        animate={{ y: -10 }}
+        exit={{ opacity: 0 }}
+        transition={transition}
+      >
         <Scene1 className=""></Scene1>
-      </div>
+      </motion.div>
 
       <br></br>
       <br></br>
