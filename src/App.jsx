@@ -19,16 +19,31 @@ import telechairster from "./assets/previews/telechairster_250x500px.png";
 import AnimatedRoutes from "./components/AnimatedRoutes";
 
 function App() {
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+  const toggleHamburger = () => {
+    setHamburgerOpen(!hamburgerOpen);
+  };
+
   return (
     <div className="bg-gray-50">
       <Router>
-        <div className="w-full flex justify-center sticky top-2 z-20">
-          <nav className="">
-            
-            <ul className="md:flex flex-row [&>*]:mx-5 px-2 z-20">
+        <div className="w-full flex md:justify-center sticky top-2 z-20">
+          <nav className="text-7xl md:text-2xl">
+            <ul className=" md:flex flex-row [&>*]:mx-5 px-2 z-20 justify-center">
+              <li className="sm:block md:hidden transition delay-50 duration-250 ease-in-out text-black rounded-3xl hover:bg-gray-50/50 bg-blend-multiply px-4 py-2">
+                <button className="" onClick={toggleHamburger}>
+                  &#8801;
+                </button>
+              </li>
+
               <li>
                 <Link
-                  className="transition delay-50 duration-250 ease-in-out text-black rounded-3xl hover:bg-gray-50/50 bg-blend-multiply px-4 py-2"
+                  className={`${
+                    hamburgerOpen
+                      ? "block md:block transition delay-50 duration-250 ease-in-out"
+                      : "hidden md:block transition delay-50 duration-250 ease-in-out"
+                  } transition delay-50 duration-250 ease-in-out text-black rounded-3xl hover:bg-gray-50/50 bg-blend-multiply px-4 py-2`}
                   to="/"
                 >
                   Fabrication
@@ -36,7 +51,11 @@ function App() {
               </li>
               <li>
                 <Link
-                  className="transition delay-50 duration-250 ease-in-out text-black rounded-3xl hover:bg-gray-50/50 bg-blend-multiply px-4 py-2"
+                  className={`${
+                    hamburgerOpen
+                      ? "block md:block transition delay-50 duration-250 ease-in-out"
+                      : "hidden md:block transition delay-50 duration-250 ease-in-out"
+                  } transition delay-50 duration-250 ease-in-out text-black rounded-3xl hover:bg-gray-50/50 bg-blend-multiply px-4 py-2`}
                   to="/Featured"
                 >
                   Architecture
@@ -44,7 +63,11 @@ function App() {
               </li>
               <li>
                 <Link
-                  className="transition delay-50 duration-250 ease-in-out text-black rounded-3xl hover:bg-gray-50/50 bg-blend-multiply px-4 py-2"
+                  className={`${
+                    hamburgerOpen
+                      ? "block md:block transition delay-50 duration-250 ease-in-out"
+                      : "hidden md:block transition delay-50 duration-250 ease-in-out"
+                  } transition delay-50 duration-250 ease-in-out text-black rounded-3xl hover:bg-gray-50/50 bg-blend-multiply px-4 py-2`}
                   to="/Dwellci"
                 >
                   Multimedia

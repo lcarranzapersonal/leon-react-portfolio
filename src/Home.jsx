@@ -16,7 +16,6 @@ import dwellciPreview from "./assets/previews/dwellci_preview_2k.png";
 import architecturePreview from "./assets/previews/architecture_250x500px.png";
 import portraitPreview from "./assets/previews/portrait_250x500px.png";
 
-
 import {
   Description,
   Dialog,
@@ -38,9 +37,12 @@ export function Home() {
       animate={{ opacity: 100 }}
       exit={{ opacity: 0 }}
     >
-      <div className="sticky xs:h-75 sm:h-25 w-100 items-center">
-          <Scene1 className=""></Scene1>
-        </div>
+      <div className="xs:h-100 sm:h-25 w-100 items-center">
+        <Scene1 className=""></Scene1>
+      </div>
+
+      <br></br>
+      <br></br>
       <div className="flex flex-col items-center sm:scale-100 md:scale-85 lg:scale-60 scale-100">
         <div className="flex flex-col items-center">
           <ul className="">
@@ -48,10 +50,7 @@ export function Home() {
               <ul className="flex flex-col lg:flex-row">
                 {/* entry */}
                 <li>
-                  <Link
-                    className=""
-                    to="/About"
-                  >
+                  <Link className="" to="/About">
                     <Card
                       title="About Me"
                       cardImg={portraitPreview}
@@ -101,10 +100,7 @@ export function Home() {
 
                 {/* entry */}
                 <li>
-                  <Link
-                    className=""
-                    to="/Fabrication"
-                  >
+                  <Link className="" to="/Fabrication">
                     <Card
                       title="Fabrication"
                       cardImg={telechairster}
@@ -151,16 +147,12 @@ export function Home() {
                   </Link>
                 </li>
                 {/* entry */}
-
               </ul>
 
               <ul className="flex flex-col lg:flex-row">
                 {/* entry */}
                 <li>
-                  <Link
-                    className=""
-                    to="/Architecture"
-                  >
+                  <Link className="" to="/Architecture">
                     <Card
                       title="Architecture"
                       cardImg={architecturePreview}
@@ -210,10 +202,7 @@ export function Home() {
 
                 {/* entry */}
                 <li>
-                  <Link
-                    className=""
-                    to="/Multimedia"
-                  >
+                  <Link className="" to="/Multimedia">
                     <Card
                       title="Multimedia"
                       cardImg={truchetPreview}
@@ -260,7 +249,6 @@ export function Home() {
                   </Link>
                 </li>
                 {/* entry */}
-
               </ul>
             </li>
           </ul>
