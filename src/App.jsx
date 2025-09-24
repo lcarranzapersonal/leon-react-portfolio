@@ -26,10 +26,10 @@ function App() {
   };
 
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-50 overflow-x-hidden">
       <Router>
         <div className="w-full flex md:justify-center sticky top-2 z-20">
-          <nav className="text-7xl md:text-2xl">
+          <nav className="bg-gray-50 opacity-85  backdrop-blur-lg text-5xl md:text-2xl">
             <ul className=" md:flex flex-row [&>*]:mx-5 px-2 z-20 justify-center">
               <li className="sm:block md:hidden transition delay-50 duration-250 ease-in-out text-black rounded-3xl hover:bg-gray-50/50 bg-blend-multiply px-4 py-2">
                 <button className="" onClick={toggleHamburger}>
