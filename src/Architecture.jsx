@@ -8,6 +8,10 @@ import { useInView } from "react-hook-inview";
 //links
 import Scene1 from "./components/Scene1.jsx";
 import Longboard from "./components/Longboard.jsx";
+import SpiralLibrary from "./components/SpiralLibrary.jsx";
+import SanJuanHill from "./components/SanJuanHill.jsx";
+import MemoryscapeCasino from "./components/MemoryscapeCasino.jsx";
+import SpiralPavilion from "./components/SpiralPavilion.jsx";
 
 //previews
 import truchetPreview from "./assets/previews/preview-500x250px.png";
@@ -15,7 +19,9 @@ import telechairster from "./assets/previews/telechairster_250x500px.png";
 import dwellciPreview from "./assets/previews/dwellci_preview_2k.png";
 import architecturePreview from "./assets/previews/architecture_250x500px.png";
 import portraitPreview from "./assets/previews/portrait_250x500px.png";
-
+import sjhPreview from "./assets/previews/sjh_250x500px.png";
+import casinoPreview from "./assets/previews/360diffusion_500x250px.gif";
+import spiralPavilionPreview from "./assets/previews/spiral_pavilion_preview_250x500px.png";
 
 import {
   Description,
@@ -45,10 +51,7 @@ export function Architecture() {
               <ul className="flex flex-col lg:flex-row">
                 {/* entry */}
                 <li>
-                  <Link
-                    className=""
-                    to="/Architecture/SpiralLibrary"
-                  >
+                  <Link className="" to="/Architecture/SpiralLibrary">
                     <Card
                       title="Spiral Library"
                       cardImg={architecturePreview}
@@ -98,13 +101,10 @@ export function Architecture() {
 
                 {/* entry */}
                 <li>
-                  <Link
-                    className=""
-                    to="/Longboard"
-                  >
+                  <Link className="" to="/Architecture/SanJuanHill">
                     <Card
-                      title="Fabrication"
-                      cardImg={telechairster}
+                      title="San Juan Hill Re-Emergence"
+                      cardImg={sjhPreview}
                       date=""
                       listItems={[]}
                       content={
@@ -148,19 +148,15 @@ export function Architecture() {
                   </Link>
                 </li>
                 {/* entry */}
-
               </ul>
 
               <ul className="flex flex-col lg:flex-row">
                 {/* entry */}
                 <li>
-                  <Link
-                    className=""
-                    to="/Longboard"
-                  >
+                  <Link className="" to="/Architecture/MemoryscapeCasino">
                     <Card
-                      title="Architecture"
-                      cardImg={architecturePreview}
+                      title="Memoryscape Casino"
+                      cardImg={casinoPreview}
                       date=""
                       listItems={[]}
                       content={
@@ -207,13 +203,10 @@ export function Architecture() {
 
                 {/* entry */}
                 <li>
-                  <Link
-                    className=""
-                    to="/Longboard"
-                  >
+                  <Link className="" to="/Architecture/SpiralPavilion">
                     <Card
-                      title="Multimedia"
-                      cardImg={truchetPreview}
+                      title="Spiral Pavilion"
+                      cardImg={spiralPavilionPreview}
                       date=""
                       listItems={[]}
                       content={
@@ -257,7 +250,6 @@ export function Architecture() {
                   </Link>
                 </li>
                 {/* entry */}
-
               </ul>
             </li>
           </ul>

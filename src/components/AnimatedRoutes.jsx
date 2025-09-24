@@ -17,14 +17,21 @@ import { About } from "../About";
 
 import Scene1 from "../components/Scene1.jsx";
 import Longboard from "../components/Longboard.jsx";
+
+{
+  /* architecture content */
+}
 import SpiralLibrary from "../components/SpiralLibrary.jsx";
+import SanJuanHill from "../components/SanJuanHill.jsx";
+import MemoryscapeCasino from "../components/MemoryscapeCasino.jsx";
+import SpiralPavilion from "../components/SpiralPavilion.jsx";
 
 import { AnimatePresence } from "framer-motion";
 
 function AnimatedRoutes() {
   const location = useLocation();
   return (
-    <AnimatePresence >
+    <AnimatePresence>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/Longboard" element={<Longboard />} />
@@ -34,11 +41,21 @@ function AnimatedRoutes() {
 
         <Route path="/About" element={<About />} />
         <Route path="/Fabrication" element={<Fabrication />} />
+
+        {/* architecture content */}
         <Route path="/Architecture" element={<Architecture />} />
         <Route path="/Architecture/SpiralLibrary" element={<SpiralLibrary />} />
+        <Route path="/Architecture/SanJuanHill" element={<SanJuanHill />} />
+        <Route
+          path="/Architecture/MemoryscapeCasino"
+          element={<MemoryscapeCasino />}
+        />
+        <Route
+          path="/Architecture/SpiralPavilion"
+          element={<SpiralPavilion />}
+        />
 
         <Route path="/Multimedia" element={<Multimedia />} />
-
       </Routes>
     </AnimatePresence>
   );

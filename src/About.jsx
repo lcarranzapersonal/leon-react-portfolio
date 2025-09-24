@@ -15,7 +15,7 @@ import telechairster from "./assets/previews/telechairster_250x500px.png";
 import dwellciPreview from "./assets/previews/dwellci_preview_2k.png";
 import architecturePreview from "./assets/previews/architecture_250x500px.png";
 import portraitPreview from "./assets/previews/portrait_250x500px.png";
-
+import headshot from "./assets/previews/truchet_portrait.png";
 
 import {
   Description,
@@ -33,235 +33,93 @@ export function About() {
 
   return (
     <motion.div
-      className="flex flex-col items-center justify-items-center min-h-screen px-4"
+      className="flex flex-col items-center justify-items-center min-h-screen px-4 md:px-100"
       initial={{ opacity: 0 }}
       animate={{ opacity: 100 }}
       exit={{ opacity: 0 }}
     >
-      <div className="flex flex-col items-center sm:scale-100 md:scale-85 lg:scale-60 scale-100">
-        <div className="flex flex-col">
-          <ul className="">
-            <li>
-              <ul className="flex flex-col lg:flex-row">
-                {/* entry */}
-                <li>
-                  <Link
-                    className=""
-                    to="/Longboard"
-                  >
-                    <Card
-                      title="About Me"
-                      cardImg={portraitPreview}
-                      date=""
-                      listItems={[]}
-                      content={
-                        <div>
-                          <button
-                            className="w-full"
-                            onClick={() => setIsOpen(true)}
-                          >
-                            Open dialog
-                          </button>
-                          <Dialog
-                            open={isOpen}
-                            onClose={() => setIsOpen(false)}
-                            className={`${
-                              isOpen
-                                ? "bg-gray/30 relative z-50"
-                                : "w-screen sm:max-w-md md:max-w-3xl px-8"
-                            } transition-all duration-1000 ease-in-out mx-auto`}
+      <img src={headshot} className="py-5 w-md"></img>
+      <div className="py-10 px-10">
+        <h2 className="text-3xl  font-medium">ABOUT</h2>
+        <p className="py-2">
+          A recent graduate from Cornell University’s architecture program with
+          a focus on computational design and digital fabrication. Both there
+          and in his early career, he has experienced working in various fast
+          paced design environments. He has experienced working with cross
+          functional teams to learn and innovate with digital tools for design
+          and manufacturing—especially CAD, CAM, and additive manufacturing.
+        </p>
 
-                            // "bg-gray/30 relative z-50"
-                          >
-                            <div className="fixed inset-0 flex w-screen items-center justify-center p-4">
-                              <DialogPanel className="relative w-screen h-screen space-y-4 backdrop-blur-2xl p-12">
-                                <DialogTitle className="z-100 absolute absolute top-1/16 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold">
-                                  <div className=" flex gap-4">
-                                    <button
-                                      className="inline-flex items-center justify-center border align-middle select-none font-sans font-medium text-center px-4 py-2 text-black text-sm font-medium rounded-3xl bg-white/2.5 border border-white/50 backdrop-blur-sm shadow-[inset_0_1px_0px_rgba(255,255,255,0.75),0_0_9px_rgba(0,0,0,0.2),0_3px_8px_rgba(0,0,0,0.15)] hover:bg-white/30 transition-all duration-300 before:absolute before:inset-0 before:rounded-3xl before:bg-gradient-to-br before:from-white/60 before:via-transparent before:to-transparent before:opacity-70 before:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:bg-gradient-to-tl after:from-white/30 after:via-transparent after:to-transparent after:opacity-50 after:pointer-events-none transition antialiased"
-                                      onClick={() => setIsOpen(false)}
-                                    >
-                                      Back
-                                    </button>
-                                  </div>
-                                </DialogTitle>
-                                <Scene1 className="flex-1 w-screen h-screen drop-shadow-2xl" />
-                              </DialogPanel>
-                            </div>
-                          </Dialog>
-                        </div>
-                      }
-                    />
-                  </Link>
-                </li>
-                {/* entry */}
+        <h2 className="py-5 text-3xl  font-medium">EXPERIENCE</h2>
 
-                {/* entry */}
-                <li>
-                  <Link
-                    className=""
-                    to="/Longboard"
-                  >
-                    <Card
-                      title="Fabrication"
-                      cardImg={telechairster}
-                      date=""
-                      listItems={[]}
-                      content={
-                        <div>
-                          <button
-                            className="w-full"
-                            onClick={() => setIsOpen(true)}
-                          >
-                            Open dialog
-                          </button>
-                          <Dialog
-                            open={isOpen}
-                            onClose={() => setIsOpen(false)}
-                            className={`${
-                              isOpen
-                                ? "bg-gray/30 relative z-50"
-                                : "w-screen sm:max-w-md md:max-w-3xl px-8"
-                            } transition-all duration-1000 ease-in-out mx-auto`}
+        <h3 className="text-xl  font-medium">3D MODELER AND FABRICATOR</h3>
+        <h4 className="py-2 text-xl font-light"> Freelance </h4>
+        <h4 className=" text-xl font-light"> August 2023 - Present </h4>
 
-                            // "bg-gray/30 relative z-50"
-                          >
-                            <div className="fixed inset-0 flex w-screen items-center justify-center p-4">
-                              <DialogPanel className="relative w-screen h-screen space-y-4 backdrop-blur-2xl p-12">
-                                <DialogTitle className="z-100 absolute absolute top-1/16 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold">
-                                  <div className=" flex gap-4">
-                                    <button
-                                      className="inline-flex items-center justify-center border align-middle select-none font-sans font-medium text-center px-4 py-2 text-black text-sm font-medium rounded-3xl bg-white/2.5 border border-white/50 backdrop-blur-sm shadow-[inset_0_1px_0px_rgba(255,255,255,0.75),0_0_9px_rgba(0,0,0,0.2),0_3px_8px_rgba(0,0,0,0.15)] hover:bg-white/30 transition-all duration-300 before:absolute before:inset-0 before:rounded-3xl before:bg-gradient-to-br before:from-white/60 before:via-transparent before:to-transparent before:opacity-70 before:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:bg-gradient-to-tl after:from-white/30 after:via-transparent after:to-transparent after:opacity-50 after:pointer-events-none transition antialiased"
-                                      onClick={() => setIsOpen(false)}
-                                    >
-                                      Back
-                                    </button>
-                                  </div>
-                                </DialogTitle>
-                                <Scene1 className="flex-1 w-screen h-screen drop-shadow-2xl" />
-                              </DialogPanel>
-                            </div>
-                          </Dialog>
-                        </div>
-                      }
-                    />
-                  </Link>
-                </li>
-                {/* entry */}
+        <ul className="py-2">
+          <li className="py-2">
+            Subdivision modeled functional furniture using novel hybrid 3D
+            printing and CAM programming methods with 3-week turnaround
+          </li>
+          <li className="py-2">
+            Drafted precise documents and animations in CAD illustrating the
+            assembly and intended usage of products costs
+          </li>
+          <li className="py-2">
+            Rendered products in environments matching their intended uses costs
+          </li>
+          <li className="py-2">
+            Modeled molds for vacuum-forming wood lamination
+          </li>
+          <li className="py-2">
+            Communicated effectively with clients to design, manufacture, and
+            post-process toys, ensuring precision and their delight
+          </li>
+          <li className="py-2">
+            Accurately budgeted and estimated for time and material costs
+          </li>
+        </ul>
 
-              </ul>
+        <h3 className="text-xl  font-medium">
+          DESIGN TECHNOLOGY AND PRODUCT MANAGEMENT INTERN
+        </h3>
+        <h4 className="py-2 text-xl font-light">
+          {" "}
+          Dwellci AI, Architecture AI Startup{" "}
+        </h4>
+        <h4 className=" text-xl font-light"> May 2025 - August 2025 </h4>
 
-              <ul className="flex flex-col lg:flex-row">
-                {/* entry */}
-                <li>
-                  <Link
-                    className=""
-                    to="/Longboard"
-                  >
-                    <Card
-                      title="Architecture"
-                      cardImg={architecturePreview}
-                      date=""
-                      listItems={[]}
-                      content={
-                        <div>
-                          <button
-                            className="w-full"
-                            onClick={() => setIsOpen(true)}
-                          >
-                            Open dialog
-                          </button>
-                          <Dialog
-                            open={isOpen}
-                            onClose={() => setIsOpen(false)}
-                            className={`${
-                              isOpen
-                                ? "bg-gray/30 relative z-50"
-                                : "w-screen sm:max-w-md md:max-w-3xl px-8"
-                            } transition-all duration-1000 ease-in-out mx-auto`}
+        <ul className="py-2">
+          <li className="py-2">
+            Led and moderated meetings to discuss vision of proprietary 3D
+            design software for architects
+          </li>
+          <li className="py-2">
+            Rapidly learned software development principles to make informed
+            decisions with machine learning engineers
+          </li>
+          <li className="py-2">
+            Collaborated with web developers and graphic designers to launch
+            company website
+          </li>
+        </ul>
 
-                            // "bg-gray/30 relative z-50"
-                          >
-                            <div className="fixed inset-0 flex w-screen items-center justify-center p-4">
-                              <DialogPanel className="relative w-screen h-screen space-y-4 backdrop-blur-2xl p-12">
-                                <DialogTitle className="z-100 absolute absolute top-1/16 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold">
-                                  <div className=" flex gap-4">
-                                    <button
-                                      className="inline-flex items-center justify-center border align-middle select-none font-sans font-medium text-center px-4 py-2 text-black text-sm font-medium rounded-3xl bg-white/2.5 border border-white/50 backdrop-blur-sm shadow-[inset_0_1px_0px_rgba(255,255,255,0.75),0_0_9px_rgba(0,0,0,0.2),0_3px_8px_rgba(0,0,0,0.15)] hover:bg-white/30 transition-all duration-300 before:absolute before:inset-0 before:rounded-3xl before:bg-gradient-to-br before:from-white/60 before:via-transparent before:to-transparent before:opacity-70 before:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:bg-gradient-to-tl after:from-white/30 after:via-transparent after:to-transparent after:opacity-50 after:pointer-events-none transition antialiased"
-                                      onClick={() => setIsOpen(false)}
-                                    >
-                                      Back
-                                    </button>
-                                  </div>
-                                </DialogTitle>
-                                <Scene1 className="flex-1 w-screen h-screen drop-shadow-2xl" />
-                              </DialogPanel>
-                            </div>
-                          </Dialog>
-                        </div>
-                      }
-                    />
-                  </Link>
-                </li>
-                {/* entry */}
+        <h3 className="text-xl  font-medium">
+          GRAPHIC DESIGN AND DIGITAL MARKETING INTERN
+        </h3>
+        <h4 className="py-2 text-xl font-light">
+          {" "}
+          eCornell, Digital Marketing{" "}
+        </h4>
+        <h4 className=" text-xl font-light"> February 2021 - May 2025 </h4>
 
-                {/* entry */}
-                <li>
-                  <Link
-                    className=""
-                    to="/Longboard"
-                  >
-                    <Card
-                      title="Multimedia"
-                      cardImg={truchetPreview}
-                      date=""
-                      listItems={[]}
-                      content={
-                        <div>
-                          <button
-                            className="w-full"
-                            onClick={() => setIsOpen(true)}
-                          >
-                            Open dialog
-                          </button>
-                          <Dialog
-                            open={isOpen}
-                            onClose={() => setIsOpen(false)}
-                            className={`${
-                              isOpen
-                                ? "bg-gray/30 relative z-50"
-                                : "w-screen sm:max-w-md md:max-w-3xl px-8"
-                            } transition-all duration-1000 ease-in-out mx-auto`}
-
-                            // "bg-gray/30 relative z-50"
-                          >
-                            <div className="fixed inset-0 flex w-screen items-center justify-center p-4">
-                              <DialogPanel className="relative w-screen h-screen space-y-4 backdrop-blur-2xl p-12">
-                                <DialogTitle className="z-100 absolute absolute top-1/16 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold">
-                                  <div className=" flex gap-4">
-                                    <button
-                                      className="inline-flex items-center justify-center border align-middle select-none font-sans font-medium text-center px-4 py-2 text-black text-sm font-medium rounded-3xl bg-white/2.5 border border-white/50 backdrop-blur-sm shadow-[inset_0_1px_0px_rgba(255,255,255,0.75),0_0_9px_rgba(0,0,0,0.2),0_3px_8px_rgba(0,0,0,0.15)] hover:bg-white/30 transition-all duration-300 before:absolute before:inset-0 before:rounded-3xl before:bg-gradient-to-br before:from-white/60 before:via-transparent before:to-transparent before:opacity-70 before:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:bg-gradient-to-tl after:from-white/30 after:via-transparent after:to-transparent after:opacity-50 after:pointer-events-none transition antialiased"
-                                      onClick={() => setIsOpen(false)}
-                                    >
-                                      Back
-                                    </button>
-                                  </div>
-                                </DialogTitle>
-                                <Scene1 className="flex-1 w-screen h-screen drop-shadow-2xl" />
-                              </DialogPanel>
-                            </div>
-                          </Dialog>
-                        </div>
-                      }
-                    />
-                  </Link>
-                </li>
-                {/* entry */}
-
-              </ul>
-            </li>
-          </ul>
-        </div>
+        <ul className="py-2">
+          <li className="py-2">
+            Worked with copywriting, design, and marketing teams to deliver
+            videos, photos, and custom brochures for web usage with 1-week
+            turnaround
+          </li>
+        </ul>
       </div>
     </motion.div>
   );
