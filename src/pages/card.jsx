@@ -23,7 +23,7 @@ export const Card = ({
   }
 
   return (
-    <div className="relative flex flex-col w-full items-center max-w-3xl mx-auto">
+    <div className="scale:1 hover:scale-110 transition delay-10 duration-150 ease-in-out relative flex flex-col w-full items-center max-w-3xl mx-auto">
       <button
         onClick={handleClick}
         className={`${

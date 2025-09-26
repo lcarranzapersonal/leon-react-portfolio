@@ -30,26 +30,9 @@ export function Home() {
     once: true,
   });
 
-  const transition = {
-    duration: 1.5,
-    delay: 0.5,
-    ease: [0, 0.71, 0.2, 1.01],
-  };
-
   return (
-    <motion.div
-      className="flex flex-col items-center justify-items-center min-h-screen px-4"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 100 }}
-      exit={{ opacity: 0 }}
-    >
-      <motion.div
-        className="xs:h-100 sm:h-25 w-100 items-center"
-        initial={{ y: -1000 }}
-        animate={{ y: -10 }}
-        exit={{ opacity: 0 }}
-        transition={transition}
-      >
+    <motion.div className="flex flex-col items-center justify-items-center min-h-screen px-4">
+      <motion.div className="xs:h-100 sm:h-25 w-100 items-center blur-[2px] hover:blur-[0px] transition duration-200 delay-50">
         <Scene1 className=""></Scene1>
       </motion.div>
 
@@ -62,7 +45,10 @@ export function Home() {
               <ul className="flex flex-col lg:flex-row">
                 {/* entry */}
                 <li>
-                  <Link className="" to="/About">
+                  <Link
+                    className="grayscale-100 hover:grayscale-0 transition duration-150 delay-75"
+                    to="/About"
+                  >
                     <Card
                       title="About Me"
                       cardImg={portraitPreview}
